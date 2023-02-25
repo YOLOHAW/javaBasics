@@ -1,0 +1,52 @@
+package javabasics2;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		//OverLoaded methods
+		System.out.println(add(1,2,3,4));
+		
+		//printf control format and display (two arguments)
+		
+		boolean condition=true;
+		char alphabet='y';
+		String name="Cr7";
+		double bigNum=1111111;
+		int Num=7;
+		
+		System.out.printf("%b",condition);
+		System.out.printf("%c",alphabet);
+		System.out.printf("%s",name);
+		System.out.printf("%f",bigNum);
+		System.out.printf("%d",Num);
+		
+		System.out.printf("Hello %10s",name);//width
+		System.out.printf("New number is %.2f",bigNum);//precision and flags(+,-,0,,)
+		
+		//final keyword dont change and can't change
+		
+		final double pi=3.14;
+		System.out.println(pi);
+		
+		//OOP object an instance of class that may contain attributes and methods
+		//New Car Class
+		
+		Car car1=new Car();
+		Car car2=new Car();
+		System.out.println(car1.price);
+		car2.drive();
+		
+		
+	}
+	static int add(int x,int y) {
+		return x+y;
+	}
+	static int add(int x,int y,int z) {
+		return x+y+z;
+	}
+	static int add(int x,int y,int z,int a) {
+		return x+y+z+a;
+	}
+
+}

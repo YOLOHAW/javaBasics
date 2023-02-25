@@ -1,0 +1,20 @@
+package javabasics2;
+
+public class Me {
+	String power="Non-Stop";
+	String weakness="Handsome";
+	String favSport="football";
+	int salary=1111111;
+	boolean hardWorking=true;
+	
+	Me(String power,String weakness){
+		this.power=power;
+		this.weakness=weakness;
+	}
+	Me(String power,String favSport,int salary,boolean hardWorking){
+		this.power=power;
+		this.favSport=favSport;
+		this.salary=salary;
+		this.hardWorking=hardWorking;
+	}
+}

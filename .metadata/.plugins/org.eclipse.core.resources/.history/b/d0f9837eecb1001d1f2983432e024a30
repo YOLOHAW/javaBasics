@@ -1,0 +1,148 @@
+package javabasics;
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+import java.util.Random;
+
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        System.out.println("This is my first java program again");
+        
+//        //variables
+//        int number=1;
+//        boolean achain=true;
+//        double number2=3.24;
+//        char alphabet='y';
+//        String name="Htet Aung Win";
+//        
+//        System.out.println(number+number2);
+//        System.out.println(achain);
+//        System.out.println("My name is "+name);
+//        
+//        //Swap two variables
+//        String x="water";
+//        String y="coffee";
+//        String temp;
+//        
+//        temp=x;
+//        x=y;
+//        y=temp;
+//        
+//        System.out.println(x);
+//        System.out.println(y);
+//        
+//        //UserInput
+//        Scanner scanner=new Scanner(System.in);
+//        
+//        System.out.println("What is your name");
+//        String name1=scanner.nextLine();
+//        
+//        System.out.println("How old are you");
+//        int age1=scanner.nextInt();
+//        scanner.nextLine();
+//        
+//        
+//        System.out.println("What is your favourite sport");
+//        String sport=scanner.nextLine();
+//        
+//        
+//        System.out.println("Your name is "+name1);
+//        System.out.println("You are "+age1+" years old");
+//        System.out.println("Your favourite sport is "+sport);
+//        
+//          //expressions(operands and operators)
+//          int friends=11;
+//          friends++;
+//          System.out.println(friends);
+//          
+//          //GUI intro with JoptionPane
+//          
+//          String name2=JOptionPane.showInputDialog("What is your name");
+//          JOptionPane.showMessageDialog(null,"Your name is "+name2);
+//	
+//          String age2=JOptionPane.showInputDialog("How old are you dude");
+//          JOptionPane.showMessageDialog(null,"You are "+age2+" years old");
+//          
+//          //Math class max,min,abs,round,ceil,floor
+//          double a=7.7;
+//          double b=9.9;
+//          
+//          double z = Math.min(a, b);
+//          System.out.println(z);
+//          
+//          double c=3;
+//          double d=4;
+//          double e;
+//          
+//          e= Math.sqrt((c*c)+(d*d));
+//          System.out.println("The result of hypotenuse is "+e);
+//          
+          //Random Numbers nextInt nextDouble nextBoolean
+        	Random random=new Random();
+        	int l=random.nextInt(6)+1;
+        	
+        	System.out.println(l);
+        	
+          //If statements
+        	
+        	String job="Programmer";
+        	
+        	if(job=="Nothing") {
+        		System.out.println("Who are You?");
+        	}else {
+        		System.out.println("I wish you to become a professional programmer");
+        	}
+        	
+         //Switch statements mutiple choice for an expression
+        	String day="Tuesday";
+        	
+        	switch(day) {
+        		case "Monday":
+        			System.out.println("It is every worker nightmare");
+        			break;
+        		case "Tuesday":
+        			System.out.println("I was born in this day for not giving up life");
+        			break;
+        		case "Friday":
+        			System.out.println("It is every worker desire");
+        			break;
+        		default: System.out.println("It is not a day");
+        	}
+        	
+        //Logical Operators && || !=
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("To quit the GAME, q or Q");
+        String response=scanner.nextLine();
+        
+        if(!response.equals("q") && !response.equals("Q")) {
+        	System.out.println("You are still inside the game,Meow Meow");
+        }else {
+        	System.out.println("You are already quitted the game");
+        }
+        
+        //while loop executes as long as condition true
+        String Name="";
+        
+        while(Name.isBlank()) {
+        	System.out.println("Enter the name: ");
+        	Name=scanner.nextLine();
+        }
+        System.out.println("Hello "+Name);
+        
+        //for loop executes a block of code a limited amount of time
+        
+        for(int i=10;i>=0;i--) {
+        	System.out.println(i);
+        }
+        System.out.println("Happy New Year!");
+        
+        
+        
+        
+        
+	}
+
+}
