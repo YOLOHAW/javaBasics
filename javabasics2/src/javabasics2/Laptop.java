@@ -28,4 +28,9 @@ public class Laptop {
 	public void setPrice(double price) {
 		this.price=price;
 	}
+	public void copy(Laptop y) {
+		this.setMake(y.getMake());
+		this.setModel(y.getModel());
+		this.setPrice(y.getPrice());
+	}
 }
